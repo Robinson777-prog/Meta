@@ -1,3 +1,4 @@
+
 import importlib
 
 from mem0.configs.embeddings.base import BaseEmbedderConfig
@@ -25,6 +26,7 @@ class LlmFactory:
         "gemini": "mem0.llms.gemini.GeminiLLM",
         "deepseek": "mem0.llms.deepseek.DeepSeekLLM",
         "xai": "mem0.llms.xai.XAILLM",
+        "lmstudio": "mem0.llms.lmstudio.LMStudioLLM",
     }
 
     @classmethod
@@ -47,6 +49,7 @@ class EmbedderFactory:
         "gemini": "mem0.embeddings.gemini.GoogleGenAIEmbedding",
         "vertexai": "mem0.embeddings.vertexai.VertexAIEmbedding",
         "together": "mem0.embeddings.together.TogetherEmbedding",
+        "lmstudio": "mem0.embeddings.lmstudio.LMStudioEmbedding",
     }
 
     @classmethod
